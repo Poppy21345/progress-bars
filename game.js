@@ -1,36 +1,36 @@
 var game = {
 	isResettingGame: false,
-	isDebugServer: false
+	isDebugServer: true
 };
 var upgrades = {
 	doubleClicker: {
 		id: 'doubleClicker',
 		name: 'Double Clicker',
-		cost: 100,
+		cost: 10,
 		tooltip: 'Doubles the cash earned from clicking.',
 		icon: 'glyphicon-hand-up',
 		apply: function() {
-			player.click.power *= 2;
+			player.click.power *= 200;
 		}
 	},
 	loggingTruck: {
 		id: 'loggingTruck',
 		name: 'Logging Truck',
-		cost: 400,
+		cost: 4,
 		tooltip: 'Increases the supply limit of Wood by 50.',
 		icon: 'glyphicon-align-justify',
 		apply: function() {
-			player.currencies.wood.maxSupply += 50;
+			player.currencies.wood.maxSupply += 500;
 		}
 	},
 	warehouse1: {
 		id: 'warehouse1',
 		name: 'Warehouse Capacity',
-		cost: 800,
+		cost: 8,
 		tooltip: 'Increases the capacity of your Commodity Sales warehouse by 50.',
 		icon: 'glyphicon-home',
 		apply: function() {
-			player.currencies.sales1.maxSupply += 50;
+			player.currencies.sales1.maxSupply += 5000;
 		}
 	},
 	plankDistribution: {
