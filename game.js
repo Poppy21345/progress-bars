@@ -405,8 +405,8 @@ var upgrades = {
 	durableFlooring: {
 		id: 'durableFlooring',
 		name: 'Durable Flooring',
-		cost: 1400000,
-		tooltip: 'Increase the base unit price of Rubber by $2.10.',
+		cost: 100,
+		tooltip: 'Increase the base unit price of Rubber by $20000000.10.',
 		icon: 'glyphicon-unchecked',
 		apply: function() {
 			player.currencies.rubber.baseUnitPrice += 2.10;
