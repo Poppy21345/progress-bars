@@ -1,6 +1,6 @@
 var game = {
 	isResettingGame: false,
-	isDebugServer: false
+	isDebugServer: true
 };
 var upgrades = {
 	doubleClicker: {
