@@ -1,16 +1,16 @@
 var game = {
 	isResettingGame: false,
-	isDebugServer: false
+	isDebugServer: true
 };
 var upgrades = {
 	doubleClicker: {
 		id: 'doubleClicker',
 		name: 'Double Clicker',
-		cost: 100,
+		cost: 10,
 		tooltip: 'Doubles the cash earned from clicking.',
 		icon: 'glyphicon-hand-up',
 		apply: function() {
-			player.click.power *= 2;
+			player.click.power *= 200;
 		}
 	},
 	loggingTruck: {
@@ -820,8 +820,8 @@ function initialize() {
 				curr.isBiome = true;
 				break;
 			case 'livestock':
-				curr.speed = 25;
-				curr.unitPrice = 12;
+				curr.speed = 250;
+				curr.unitPrice = 1;
 				curr.bonusCurrencies = ['tools3', 'prairie'];
 				curr.sales = 'sales2';
 				curr.isResource = true;
